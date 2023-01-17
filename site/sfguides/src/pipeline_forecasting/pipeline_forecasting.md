@@ -1,6 +1,6 @@
 author: Daniel Chow
 id: pipeline_forecasting
-summary: This is a sample Snowflake Guide
+summary: A guide to get a basic Pipeline Forecasting up and running.
 categories: Getting Started
 environments: web
 status: Published 
@@ -19,23 +19,27 @@ It is important to include on the first page of your guide the following section
 The rest of this Snowflake Guide explains the steps of writing your own guide. 
 
 ### Prerequisites
-- Familiarity with Markdown syntax
+* Completion of the [Getting Started with Snowpark for Python](https://quickstarts.snowflake.com/guide/getting_started_snowpark_machine_learning/#0) Quickstart
+* Working knowledge of Python
+* Familiarity with Snowflake
+* Familiarity with Docker, Apache Airflow
 
 ### What You’ll Learn 
-- how to set the metadata for a guide (category, author, id, etc)
-- how to set the amount of time each slide will take to finish 
-- how to include code snippets 
-- how to hyperlink items 
-- how to include images 
+* How to create a bottom up pipeline forecast model
+* How to setup an Extract, Load and Transform (ELT) pipeline in Python for both bulk ingestion of ~100m time series records using the Snowpark Python Client API as well as an incremental load process.
+* How to perform exploratory data analysis , model development, experimentation and feature engineering using Snowflake and Python
+* How to create a reproducible, monitored, explainable and automated pipeline for machine learning training and inference at very large scale.
+* How to implement end-to-end machine learning workflows in Snowflake with Python which can be orchestrated with dbt, Airflow, or any other python-capable orchestration framework.
 
 ### What You’ll Need 
-- A [GitHub](https://github.com/) Account 
-- [VSCode](https://code.visualstudio.com/download) Installed
-- [NodeJS](https://nodejs.org/en/download/) Installed
-- [GoLang](https://golang.org/doc/install) Installed
+* A Snowflake Account with Anaconda Integration enabled by ORGADMIN - if you do not already have a Snowflake account, you can register for a free trial account
+
+*Note: If you are planning to run this Quickstart locally, you may have additional requirements, e.g. Docker, Miniconda. Take a look at the source code README for more information on additional local environment requirements.*
 
 ### What You’ll Build 
-- A Snowflake Guide
+* An orchestrated end-to-end Machine Learning pipeline to perform monthly forecasts using Snowflake, Snowpark Python, PyTorch, and Apache Airflow.
+
+
 
 <!-- ------------------------ -->
 ## Metadata Configuration
