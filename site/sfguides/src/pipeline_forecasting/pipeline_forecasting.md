@@ -42,32 +42,13 @@ The rest of this Snowflake Guide explains the steps of writing your own guide.
 
 
 <!-- ------------------------ -->
-## Metadata Configuration
+## Use-Case: B2B Sales Pipeline Forecasting
 Duration: 2
 
-It is important to set the correct metadata for your Snowflake Guide. The metadata contains all the information required for listing and publishing your guide and includes the following:
-
-
-- **summary**: This is a sample Snowflake Guide 
-  - This should be a short, 1 sentence description of your guide. This will be visible on the main landing page. 
-- **id**: sample 
-  - make sure to match the id here with the name of the file, all one word.
-- **categories**: data-science 
-  - You can have multiple categories, but the first one listed is used for the icon.
-- **environments**: web 
-  - `web` is default. If this will be published for a specific event or  conference, include it here.
-- **status**: Published
-  - (`Draft`, `Published`, `Deprecated`, `Hidden`) to indicate the progress and whether the sfguide is ready to be published. `Hidden` implies the sfguide is for restricted use, should be available only by direct URL, and should not appear on the main landing page.
-- **feedback link**: https://github.com/Snowflake-Labs/sfguides/issues
-- **tags**: Getting Started, Data Science, Twitter 
-  - Add relevant  tags to make your sfguide easily found and SEO friendly.
-- **authors**: Daniel Myers 
-  - Indicate the author(s) of this specific sfguide.
-
----
-
-You can see the source metadata for this guide you are reading now, on [the github repo](https://raw.githubusercontent.com/Snowflake-Labs/sfguides/master/site/sfguides/sample.md).
-
+Building and managing sales pipeline is a key responsibility for B2B sales and marketing organizations. In this Snowflake Quickstart we’d like to share with you some insights that we’ve learned from building our own in-house forecasting application so that you can accelerate your adoption of this type of modeling. Our focus will be on two key metrics: Day 1 Sales Pipeline and Closed Won Pipeline.
+ At Snowflake Day 1 Sales Pipeline is a key metric that our marketing organization manages to and represents the total amount of sales pipeline that we start a fiscal quarter with. Our marketing organization works to set our sales team up for success by generating demand for Snowflake that leads to the creation and acceleration of opportunities. 
+Closed Won Pipeline is when our sales team gets a contract signed and a prospect becomes a Snowflake customer or an existing Customer renews with Snowflake. We also refer to this as “Bookings”. 
+To arrive at our Day 1 Pipeline and Closed Won Pipeline forecasts we use a bottom up model that uses machine learning to determine how much we will get from our in-progress pipeline and how much new pipeline we will generate before the target period.
 
 <!-- ------------------------ -->
 ## Creating a Step
